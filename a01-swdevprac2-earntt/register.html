@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <style>
+            div {
+                font-size: 18px;
+                background-color: bisque;
+            }
+            h1 {
+                font-size: 2.5em;
+                background-color: ivory;
+                color: sienna;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Register Form</h1>
+        <form id="register" name="register">
+            <div>
+                <p>
+                    Company Name: 
+                    <input type="text" id="company_name" name="company_name" placeholder="Company Name">
+                </p>
+            
+                <p>
+                    Booth Size: <br>
+                    <select id="booth_size" name="booth_size" size="1" required>
+                        <option value="10x10">10x10 ft.</option>
+                        <option value="10x15">10x15 ft.</option>
+                    </select>
+                </p>
+            
+                <p>
+                    <input type="checkbox" id="is_table" name="is_table">
+                    <label for="is_table">Table Needed</label>
+                </p>
+
+                <p>
+                    Seat Amount: 
+                    <input type="number" id="seat_amount" name="seat_amount" placeholder="Seat Amount">
+                </p>
+            
+                <p>
+                    Name: 
+                    <input type="text" id="name_lastname" name="name_lastname" placeholder="First Name - Last Name">
+                </p>
+            
+                <p>
+                    Phone Number: 
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number">
+                </p>
+
+                <p>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </p>
+            </div>
+        </form>
+        <p id="myname">6633082721 Tinna Jiarawapee</p>
+    </body>
+</html>

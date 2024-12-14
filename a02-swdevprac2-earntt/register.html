@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <style>
+            div {
+                font-size: 18px;
+                background-color: bisque;
+            }
+            h1 {
+                font-size: 2.5em;
+                background-color: ivory;
+                color: sienna;
+                text-align: center;
+            }
+        </style>
+        <script src="register.js"></script>
+    </head>
+    <body>
+        <h1>Register Form</h1>
+        <form id="register" name="register">
+            <div>
+                <p>
+                    Company Name: 
+                    <input type="text" id="compName" name="compName" placeholder="Company Name">
+                </p>
+            
+                <p>
+                    Booth Size: <br>
+                    <select id="boothSize" name="boothSize" size="1" required>
+                        <option value="10x10">10x10 ft.</option>
+                        <option value="10x15">10x15 ft.</option>
+                    </select>
+                </p>
+            
+                <p>
+                    <input type="checkbox" id="isTable" name="isTable">
+                    <label for="is_table">Table Needed</label>
+                </p>
+
+                <p>
+                    Seat Amount: 
+                    <input type="number" id="seatAmount" name="seatAmount" placeholder="Seat Amount" min="1" max="10">
+                </p>
+            
+                <p>
+                    Name: 
+                    <input type="text" id="name" name="name" placeholder="First Name - Last Name">
+                </p>
+            
+                <p>
+                    Phone Number: 
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number">
+                </p>
+
+                <p>
+                    <input type="submit" id="submit" name="submit" value="Submit" onclick="check()">
+                </p>
+            </div>
+        </form>
+        <p id="myname">6633082721 Tinna Jiarawapee</p>
+    </body>
+</html>
